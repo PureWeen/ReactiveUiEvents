@@ -28,11 +28,13 @@ namespace AzureDeviceClient.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
 
-
-
+             
             TextView view = new TextView(this);
-            view.Events().AfterTextChanged.Subscribe();
 
+            AzureIoTSuiteRemoteMonitoringHelper.RemoteMonitoringDevice.Instance.Connect().Wait();
+
+            Microsoft.Azure.Devices.Client.Message message = 
+                new Microsoft.Azure.Devices.Client.Message(new byte[1999]);
             //view.Events()
         }
     }

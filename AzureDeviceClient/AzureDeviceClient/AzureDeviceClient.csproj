@@ -13,6 +13,8 @@
     <PackageTargetFallback>$(PackageTargetFallback);portable-net451+win81;portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10;portable-net45+netcore45+wp8+UAP10+MonoAndroid403+MonoTouch10+Xamarin.iOS10</PackageTargetFallback>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.5.1" />
+    <PackageReference Include="Microsoft.Azure.Devices.Shared" Version="1.1.1" />
     <PackageReference Include="System.Reactive" Version="3.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="reactiveui" Version="8.0.0-alpha0105" />

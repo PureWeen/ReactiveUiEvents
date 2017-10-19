@@ -26,6 +26,9 @@ namespace AzureDeviceClient.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.Azure.Amqp.Amqp.Resource.String.ApplicationName = global::AzureDeviceClient.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.ApplicationName = global::AzureDeviceClient.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::AzureDeviceClient.Droid.Resource.String.Hello;
 			global::Splat.Resource.String.library_name = global::AzureDeviceClient.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AzureDeviceClient.Droid.Resource.Attribute.actionBarSize;
 		}
@@ -4150,6 +4153,12 @@ namespace AzureDeviceClient.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f080052
+			public const int ApplicationName = 2131230802;
+			
+			// aapt resource value: 0x7f080051
+			public const int Hello = 2131230801;
 			
 			// aapt resource value: 0x7f080027
 			public const int abc_action_bar_home_description = 2131230759;
