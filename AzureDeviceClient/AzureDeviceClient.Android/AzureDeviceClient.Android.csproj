@@ -83,12 +83,6 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AzureDeviceClient\AzureDeviceClient.csproj">
-      <Project>{a280ecd7-8397-44ce-b0ef-e6b484e6ed4a}</Project>
-      <Name>AzureDeviceClient</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="DotNetty.Codecs.Mqtt">
       <Version>0.4.6</Version>
     </PackageReference>
